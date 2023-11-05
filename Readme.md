@@ -17,7 +17,7 @@ Welcome to BeautifulWeather, your go-to source for accurate and beautiful weathe
 <a href="https://lh3.googleusercontent.com/drive-viewer/AK7aPaDht4sfjdrpKvKIQweq6Aei38e-B4vKktqAmkU7V8UOWTBzJgky_aJix3qXcmTd6lcG8ueyHJ_WXR9p2O1yPoJdYOzWAA=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AK7aPaDht4sfjdrpKvKIQweq6Aei38e-B4vKktqAmkU7V8UOWTBzJgky_aJix3qXcmTd6lcG8ueyHJ_WXR9p2O1yPoJdYOzWAA=s1600" /> </a>
 
 <h2>Credit - StackPrajwal -- iam.prajwaljt@gmail.com</h2>
-## Key Features
+## Upcoming Update
 
 - **Real-Time Weather Data:** BeautifulWeather provides up-to-the-minute weather information, ensuring you have the most accurate and current data at your fingertips.
 
