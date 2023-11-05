@@ -1,10 +1,10 @@
-https://beautifulweathr.netlify.app/
-
 # BeautifulWeather - Your Weather Forecast Companion
 
 [Visit BeautifulWeather Website] LIVE => (https://beautifulweathr.netlify.app/)
 
-![BeautifulWeather Logo](https://yourwebsite.com/images/logo.png)
+
+<a width="100px" href="https://lh3.googleusercontent.com/drive-viewer/AK7aPaDnjm5Ycbo9tsA13-OnIYHzrSi3NZUZk-5EzNz1KcK0GQZnn9h1FU0S3R79jGokPOUBdJntWhiRr9mtZOJWtK0hMaozrg=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AK7aPaDnjm5Ycbo9tsA13-OnIYHzrSi3NZUZk-5EzNz1KcK0GQZnn9h1FU0S3R79jGokPOUBdJntWhiRr9mtZOJWtK0hMaozrg=s1600" /> </a>
+![BeautifulWeather Logo]
 
 Welcome to BeautifulWeather, your go-to source for accurate and beautiful weather forecasts! Whether you're planning a weekend getaway, a business trip, or simply want to stay informed about the weather, BeautifulWeather has you covered. With our user-friendly website and powerful weather data, you can make informed decisions with ease.
 
