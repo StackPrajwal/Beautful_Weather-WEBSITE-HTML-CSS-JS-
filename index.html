@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="preload">
+      <img id="logo" src="stocks/logo.svg" type="image/svg" />
+    </div>
+    <div id="main">
+      <img id="log" src="stocks/logo.svg" type="image/svg" />
+
+      <div id="fetch">
+        <div class="form-control">
+          <input id="cityname" class="input input-alt" placeholder="Enter City Name " required  type="text"/>
+          <span class="input-border input-border-alt"></span>
+        </div>
+        <button onclick="fetchData()" id="btn"> <img src="stocks/srch.png" type="image/png" > </button>
+        <h3 align="center" style="color: red; font-weight: normal ; margin-top: 20px;" id="error"></h3>
+        <!-- <img src="stocks/sun.png" id="sun" type="image/png" > -->
+
+      </div>  
+      <!-- End Of Fetch Form -->
+
+      <div id="info">
+          <div id="box">
+            <h1><span id="city"></span></h1>
+            <h1><span id="temp"></span></h1>
+            <h1><span id="desc"></span></h1>
+          <img src="stocks/wind.png" id="wind" type="image/png" >
+
+            <h1> <span id="windspeed"></span> <span id="unit">km/h</span> </h1>
+            <!-- <h1><span id="hum"></span></h1> -->
+
+          </div>
+          <img src="stocks/cloud/c1.png" id="c1" type="image/png" >
+          <img src="stocks/cloud/c2.png" id="c2" type="image/png" >
+          <img src="stocks/cloud/c3.png" id="c3" type="image/png" >
+          <img src="stocks/cloud/c4.png" id="c4" type="image/png" >
+          <img src="stocks/cloud/c5.png" id="c5" type="image/png" >
+          <img src="stocks/cloud/c6.png" id="c6" type="image/png" >
+      </div>
+      <!-- End Of Main -->
+    </div>
+    
+    <script src="main.js" ></script>
+
+  </body>
+</html>

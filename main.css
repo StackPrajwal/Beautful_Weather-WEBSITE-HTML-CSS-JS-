@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Libre+Baskerville:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  background: #181818;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#preload {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #181818;
+}
+
+#logo {
+  align-content: center;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  display: flex;
+  margin: auto;
+  height: 300px;
+  animation: blink 1s linear infinite;
+}
+/* #nav{
+    width: 100%;
+    height: 5%;
+    background-color: #323232;
+    position: absolute;
+
+
+  } */
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#none {
+  display: none;
+}
+
+#main {
+  /* background-color: red; */
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+#log {
+  align-content: center;
+  position: absolute;
+  top: 0%;
+  left: 2%;
+  margin: auto;
+  height: 200px;
+  z-index: 2;
+}
+#fetch {
+  position: absolute;
+  top: 42%;
+  height: 25%;
+  width: 50%;
+  left: 25%;
+  /* background-color: #0ff; */
+}
+
+.input {
+  color: #fff;
+  font-size: 150px;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+  border-bottom: var(--border-height) solid var(--border-before-color);
+  border-radius: 20px;
+  font-family: "Dosis", sans-serif;
+}
+
+.input-border {
+  position: absolute;
+  background: var(--border-after-color);
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input:focus + .input-border {
+  width: 100%;
+}
+
+.form-control {
+  position: relative;
+  --width-of-input: 300px;
+}
+
+.input-alt {
+  font-size: 50px;
+  padding-inline: 1em;
+  padding-block: 0.8em;
+  box-shadow: 1px 1px 10px rgb(62, 61, 61);
+  /* box-shadow: 0px 0px 10px rgb(255, 255, 255)4, 39, 39); */
+}
+
+.input-border-alt {
+  height: 3px;
+  background: linear-gradient(90deg, #ff6464 0%, #ffbf59 50%, #47c9ff 100%);
+  transition: width 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.input-alt:focus + .input-border-alt {
+  width: 100%;
+}
+
+button {
+  padding: 12.5px 30px;
+  border: 0;
+  border-radius: 25px;
+  background-color: transparent;
+  /* color: #ffffff; */
+  font-weight: bolder;
+  border: 2px solid #6fc5ff;
+  border-right: none;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  font-size: 30px;
+}
+
+button:hover {
+  background-color: #6fc5ff;
+  box-shadow: 0 0 20px #6fc5ff50;
+  transform: scale(1.1);
+}
+
+button:active {
+  background-color: #3d94cf;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+#btn {
+  position: absolute;
+  right: 5px;
+  top: 10%;
+  height: 50%;
+  /* font-size: ; */
+}
+
+#btn img {
+  /* margin: 7px; */
+
+  width: 60px;
+  margin-right: -20px;
+}
+
+#info {
+  background-color: #040d12;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  /* background-image: url("stocks/bg.svg");
+  background-repeat: no-repeat;
+  background-size:cover; */
+
+  /* filter: blur(5px); */
+  /* -webkit-filter: blur(8px); */
+}
+
+#box {
+  background-color: #0f2e2e;
+  position: absolute;
+  /* margin: 10%; */
+  margin: 10% 10% 0 15%;
+  width: 70%;
+  height: 70%;
+  font-size: 25px;
+  z-index: 2;
+}
+
+#city {
+  color: #93b1a6;
+  font-size: 100px;
+  text-transform: uppercase;
+  position: absolute;
+  right: 20px;
+  top: -75px;
+  text-shadow: 2px 2px 3px black;
+}
+
+#temp {
+  color: whitesmoke;
+  font-size: 200px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 10%;
+  top: 25%;
+  text-shadow: 5px 5px 20px black;
+  /* font-family: "Libre Baskerville", serif; */
+  font-family: 'Archivo', sans-serif;
+  animation: big 4s infinite;
+}
+@keyframes big {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.05);
+  }
+}
+
+#desc {
+  color: rgb(128, 130, 130);
+  font-size: 50px;
+  text-transform: uppercase;
+  position: absolute;
+  right: -17%;
+  bottom: -15%;
+  z-index: 2;
+  text-shadow: 4px 3px 10px rgb(255, 255, 255);
+  /* font-family: 'Libre Baskerville', serif; */
+}
+
+#c1 {
+  position: absolute;
+  top: 1%;
+  z-index: 1;
+  left: -5%;
+  height: 200px;
+  animation: cloud 10s infinite;
+
+}
+
+#c2 {
+  position: absolute;
+  top: 3%;
+  z-index: 1;
+  right: 2%;
+  height: 200px;
+  animation: cloud 3s ;
+
+}
+#c3 {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  left: 10%;
+  height: 200px;
+  animation: cloud 3s infinite;
+
+}
+#c4 {
+  position: absolute;
+  bottom: -15%;
+  z-index: 1;
+  left: -5%;
+  width: 20%;
+  /* display: none; */
+  animation: cloud 10s infinite;
+
+}
+#c5 {
+  position: absolute;
+  top: 1%;
+  z-index: 1;
+  left: -5%;
+  height: 200px;
+  display: none;
+}
+#c6 {
+  position: absolute;
+  bottom: -38%;
+  z-index: +1;
+  right: 2%;
+  width: 50%;
+  /* display: none; */
+  animation: cloud 3s infinite;
+}
+
+@keyframes cloud {
+  50% {
+  	transform: translateY(-12px);
+  }
+}
+
+#windspeed{
+
+  color: #25B7D3;
+  font-size: 50px;
+  text-transform: uppercase;
+  position: absolute;
+  right: 7%;
+  bottom: 4%;
+  z-index: 2;
+  text-shadow: 0px 0px 3px rgb(22, 22, 22);
+  /* font-family: 'Libre Baskerville', serif; */
+}
+
+#wind{
+  position: absolute;
+  right: 7%;
+  bottom: 15%;
+  z-index: 2;
+  width: 10%;
+  text-shadow: 0px 0px 3px rgb(22, 22, 22);
+
+}
+  #unit{
+font-size: 20px;
+position: absolute;
+right: 1%;
+bottom: 5%;
+color: white;
+  }
+
+  #sun{
+
+    position: absolute;
+    top: -115px;
+    left: -122px;
+    height: 270px;
+  }
